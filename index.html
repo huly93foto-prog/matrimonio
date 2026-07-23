@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Giulia & Ronghao | 28 settembre 2026</title>
 
-<meta name="description" content="Con grande gioia vi invitiamo al nostro matrimonio. Tocca per visualizzare l'invito.">
+<meta name="description" content="Con grande gioia vi invitiamo al nostro matrimonio.">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -26,62 +27,96 @@
 <meta name="twitter:image" content="https://huly93foto-prog.github.io/matrimonio/copertina.jpg?v=2">
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html,body{
-    width:100%;
-    height:100%;
-    overflow:hidden;
-}
-
-body{
-    background:#000;
-    font-family:Georgia,serif;
+width:100%;
+height:100%;
+overflow:hidden;
+font-family:Georgia,serif;
+background:#000;
 }
 
 .hero{
-    position:relative;
-    width:100%;
-    height:100%;
+position:relative;
+width:100%;
+height:100%;
+animation:fade 1.4s ease;
 }
 
 .hero img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
 .overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.18);
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-    align-items:center;
-    padding-bottom:60px;
-    color:white;
+position:absolute;
+inset:0;
+background:linear-gradient(
+to bottom,
+rgba(0,0,0,.10),
+rgba(0,0,0,.20),
+rgba(0,0,0,.45)
+);
+color:white;
 }
 
-h1{
-    font-size:48px;
-    text-shadow:0 2px 10px rgba(0,0,0,.6);
+.center{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+width:90%;
 }
 
-p{
-    margin-top:10px;
-    font-size:22px;
-    text-shadow:0 2px 8px rgba(0,0,0,.6);
+.center h1{
+font-size:56px;
+font-weight:normal;
+text-shadow:0 4px 18px rgba(0,0,0,.85);
 }
+
+.center h2{
+margin-top:18px;
+font-size:28px;
+font-weight:300;
+text-shadow:0 3px 12px rgba(0,0,0,.85);
+}
+
+.bottom{
+position:absolute;
+bottom:35px;
+left:50%;
+transform:translateX(-50%);
+width:90%;
+text-align:center;
+font-size:18px;
+line-height:1.5;
+text-shadow:0 2px 8px rgba(0,0,0,.9);
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:scale(1.03);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
 </style>
 
 <script>
 setTimeout(function(){
-    window.location.href="https://h5.hunbei2.com/app/A1707e7f22e3d?state=1";
+window.location.href="https://h5.hunbei2.com/app/A1707e7f22e3d?state=1";
 },2000);
 </script>
 
@@ -90,11 +125,22 @@ setTimeout(function(){
 <body>
 
 <div class="hero">
-    <img src="copertina.jpg?v=2" alt="Giulia e Ronghao">
-    <div class="overlay">
-        <h1>Giulia & Ronghao</h1>
-        <p>28 settembre 2026</p>
-    </div>
+
+<img src="copertina.jpg?v=2" alt="Giulia e Ronghao">
+
+<div class="overlay">
+
+<div class="center">
+<h1>💍 Giulia & Ronghao</h1>
+<h2>28 settembre 2026</h2>
+</div>
+
+<div class="bottom">
+🎵 Attiva la musica toccando la nota in alto a destra.
+</div>
+
+</div>
+
 </div>
 
 </body>
